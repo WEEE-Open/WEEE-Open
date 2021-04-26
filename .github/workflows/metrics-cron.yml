@@ -17,16 +17,31 @@ jobs:
           filename: metrics.organization.svg
           user: weee-open
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, repositories
+          base: header, activity, community, repositories, metadata
+          
+      - name: 🈷️ Languages plugin (detailed)
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.details.svg
+          user: weee-open
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          
+      - name: 🏆 Achievements
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.achievements.svg
+          user: weee-open
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_achievements: yes
           plugin_achievements_threshold: B  # Display achievements with rank B or higher
           plugin_achievements_secrets: yes
           plugin_achievements_limit: 5  
-          plugin_languages: yes
-          plugin_languages_details: bytes-size, percentage
-          plugin_rss: yes
-          plugin_rss_source: https://podcast.weeeopen.it/feed/podcast
-          plugin_rss_limit: 5
         
       - name: 🗼 Rss feed plugin
         if: ${{ success() || failure() }}
