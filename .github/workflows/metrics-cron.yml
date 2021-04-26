@@ -18,7 +18,6 @@ jobs:
           user: weee-open
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
-          plugin_lines: yes
           
       - name: 🈷️ Languages plugin (detailed)
         if: ${{ success() || failure() }}
@@ -30,3 +29,14 @@ jobs:
           base: ""
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
+          
+      - name: 🗼 Rss feed plugin
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.rss.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_rss: yes
+          plugin_rss_source: https://podcast.weeeopen.it/feed/podcast
+          plugin_rss_limit: 5
