@@ -53,3 +53,14 @@ jobs:
           plugin_rss: yes
           plugin_rss_source: https://podcast.weeeopen.it/feed/podcast
           plugin_rss_limit: 5
+          
+      - name: 📸 Website screenshot
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.screenshot.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_screenshot: yes
+          plugin_screenshot_title: Our website 
+          plugin_screenshot_url: ${{ secrets.WEBSITE_URL }}
