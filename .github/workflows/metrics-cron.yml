@@ -64,3 +64,5 @@ jobs:
           plugin_screenshot: yes
           plugin_screenshot_title: Our website 
           plugin_screenshot_url: ${{ secrets.WEBSITE_URL }}
+          plugin_screenshot_selector: "#main"  # CSS selector to take into screenshot
+          plugin_screenshot_background: no 
