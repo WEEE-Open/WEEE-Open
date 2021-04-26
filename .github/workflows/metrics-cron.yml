@@ -18,6 +18,7 @@ jobs:
           user: weee-open
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
+          plugin_lines: yes
           
       - name: 🈷️ Languages plugin (detailed)
         if: ${{ success() || failure() }}
