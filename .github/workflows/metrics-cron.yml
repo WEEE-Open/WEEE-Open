@@ -44,7 +44,7 @@ jobs:
           plugin_achievements_limit: 5  
         
       - name: 🧑‍🤝‍🧑 People plugin
-        if: ${{ success() || failure() }}
+        if: false
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.people.svg
@@ -57,6 +57,19 @@ jobs:
           plugin_people_size: 28                     # Size in pixels of displayed avatars
           plugin_people_identicons: no               # Use avatars (do not use identicons)
           plugin_people_shuffle: yes   
+          
+      - name: 💡 Habits plugin
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.habits.svg
+          user: weee-open
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          config_timezone: Europe/Rome
       
       - name: 🗼 Rss feed plugin
         if: ${{ success() || failure() }}
