@@ -1,11 +1,11 @@
 # see https://github.com/marketplace/actions/github-metrics-as-svg-image
 name: Metrics
 on:
-  # Schedule updates (each hour)
   schedule: [{cron: "0 * * * *"}]
-  # Lines below let you run workflow manually and on each commit (optional)
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+  push: 
+    branches: ["master", "main"]
+    paths-ignore: ["README.md"]
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
