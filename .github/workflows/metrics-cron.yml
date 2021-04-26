@@ -10,8 +10,11 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      # See action.yml for all options
-      - uses: lowlighter/metrics@latest
+      - name: 💬 Organization metrics
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
-          # Your GitHub token
+          filename: metrics.organization.svg
+          user: weee-open
           token: ${{ secrets.METRICS_TOKEN }}
+          base: header, repositories
