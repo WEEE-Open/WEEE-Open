@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="209.11848302263306" height="8" fill="#4F5D95"/>
-                    <rect mask="url(#languages-bar)" x="209.11848302263306" y="0" width="122.66929732114409" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="331.7877803437772" y="0" width="80.62368015964188" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="412.41146050341905" y="0" width="22.3993561195132" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="434.8108166229323" y="0" width="12.611139353795092" height="8" fill="#563d7c"/>
-                    <rect mask="url(#languages-bar)" x="447.42195597672736" y="0" width="5.684577623413721" height="8" fill="#c6538c"/>
-                    <rect mask="url(#languages-bar)" x="453.1065336001411" y="0" width="3.5206521661787225" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="456.6271857663198" y="0" width="3.3728142336802307" height="8" fill="#adb2cb"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="212.1098835358338" height="8" fill="#4F5D95"/>
+                    <rect mask="url(#languages-bar)" x="212.1098835358338" y="0" width="118.34663867399416" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="330.456522209828" y="0" width="81.77698671925182" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="412.2335089290798" y="0" width="22.719774689994253" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="434.953283619074" y="0" width="12.791539327005044" height="8" fill="#563d7c"/>
+                    <rect mask="url(#languages-bar)" x="447.74482294607907" y="0" width="5.765894435654411" height="8" fill="#c6538c"/>
+                    <rect mask="url(#languages-bar)" x="453.51071738173346" y="0" width="3.42106170604005" height="8" fill="#adb2cb"/>
+                    <rect mask="url(#languages-bar)" x="456.9317790877735" y="0" width="3.068220912226452" height="8" fill="#89e051"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -41,7 +41,7 @@
                             </div>
                             <small>
                                 <div>1.15 MB</div>
-                                <div>45.46%</div>
+                                <div>46.11%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -53,7 +53,7 @@
                             </div>
                             <small>
                                 <div>443 kB</div>
-                                <div>17.53%</div>
+                                <div>17.78%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -65,19 +65,19 @@
                             </div>
                             <small>
                                 <div>69.3 kB</div>
-                                <div>2.74%</div>
+                                <div>2.78%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#89e051" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#adb2cb" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Shell
+                                VHDL
                             </div>
                             <small>
-                                <div>19.3 kB</div>
-                                <div>0.77%</div>
+                                <div>18.5 kB</div>
+                                <div>0.74%</div>
                             </small>
                         </div>
                     </section>
@@ -90,8 +90,8 @@
                                 Python
                             </div>
                             <small>
-                                <div>674 kB</div>
-                                <div>26.67%</div>
+                                <div>641 kB</div>
+                                <div>25.73%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -103,7 +103,7 @@
                             </div>
                             <small>
                                 <div>123 kB</div>
-                                <div>4.87%</div>
+                                <div>4.94%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -115,19 +115,19 @@
                             </div>
                             <small>
                                 <div>31.2 kB</div>
-                                <div>1.24%</div>
+                                <div>1.25%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#adb2cb" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#89e051" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                VHDL
+                                Shell
                             </div>
                             <small>
-                                <div>18.5 kB</div>
-                                <div>0.73%</div>
+                                <div>16.6 kB</div>
+                                <div>0.67%</div>
                             </small>
                         </div>
                     </section>
